@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กฟก - Resource Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f4c3a 0%, #1a6b4f 50%, #2d8a6e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1rem;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .link-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .link-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .link-info h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 0.25rem;
+        }
+
+        .link-info p {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .icon-web { background: #e0f2fe; color: #0284c7; }
+        .icon-slide { background: #fef3c7; color: #d97706; }
+        .icon-canva-1 { background: #ede9fe; color: #7c3aed; }
+        .icon-canva-2 { background: #dcfce7; color: #16a34a; }
+        .icon-canva-3 { background: #fce7f3; color: #db2777; }
+
+        .footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5rem; }
+            .link-card { padding: 1.15rem; gap: 1rem; }
+            .link-icon { width: 44px; height: 44px; font-size: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>กฟก Presentation Resources</h1>
+            <p>รวมลิงก์เอกสารประกอบการนำเสนอ</p>
+            <span class="date-badge">28 พฤษภาคม 2569</span>
+        </div>
+
+        <div class="links-grid">
+            <a href="https://frdfund.click/" target="_blank" rel="noopener" class="link-card">
+                <div class="link-icon icon-web">&#127760;</div>
+                <div class="link-info">
+                    <h3>FRD Fund Website</h3>
+                    <p>เว็บไซต์หลัก</p>
+                </div>
+            </a>
+
+            <a href="https://docs.google.com/presentation/d/1ZHhKO9X-xALtEjiCKDNDOT25h9woYSAZI7olvd6-Hv0/edit?usp=sharing" target="_blank" rel="noopener" class="link-card">
+                <div class="link-icon icon-slide">&#128218;</div>
+                <div class="link-info">
+                    <h3>Slide Presentation</h3>
+                    <p>สไลด์นำเสนอ — Google Slides</p>
+                </div>
+            </a>
+
+            <a href="https://canva.link/5ptf8ilnwtjnae8" target="_blank" rel="noopener" class="link-card">
+                <div class="link-icon icon-canva-1">&#128200;</div>
+                <div class="link-info">
+                    <h3>Landometer Profile</h3>
+                    <p>โปรไฟล์ Landometer</p>
+                </div>
+            </a>
+
+            <a href="https://canva.link/16rhdkl46kwxsdy" target="_blank" rel="noopener" class="link-card">
+                <div class="link-icon icon-canva-2">&#127966;</div>
+                <div class="link-info">
+                    <h3>Landometer หมื่นไร่</h3>
+                    <p>Landometer — หมื่นไร่</p>
+                </div>
+            </a>
+
+            <a href="https://canva.link/bmjb75y2aont2x0" target="_blank" rel="noopener" class="link-card">
+                <div class="link-icon icon-canva-3">&#128188;</div>
+                <div class="link-info">
+                    <h3>SSS Profile</h3>
+                    <p>โปรไฟล์ SSS</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>กองทุนฟื้นฟูและพัฒนาเกษตรกร (กฟก)</p>
+        </div>
+    </div>
+</body>
+</html>
